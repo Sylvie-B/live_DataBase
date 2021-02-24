@@ -1,5 +1,6 @@
 <?php
-
+ini_set('error_reporting', E_ALL);
+ini_set('display_errors', 1);
 
 
 require './DB/version-static.php';
@@ -9,7 +10,7 @@ $userRequest = "INSERT INTO user (email, username, password) VALUES ('test@exemp
 
 if($db->exec($userRequest)) {
     $userId = $db->lastInsertId();
-    $articleRequest = "INSERT INTO article (titre, contenu, user_fk) VALUES ('un titre', 'un contenu')";
+    $articleRequest = "INSERT INTO article (titre, contenu, user_fk) VALUES ('un titre', 'un contenu', $userId)";
     $db->exec($articleRequest);
 }
 
