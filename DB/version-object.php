@@ -1,5 +1,5 @@
 <?php
-class DbConnect {
+class DB2 {
 
     private string $server;
     private string $db;
@@ -8,7 +8,7 @@ class DbConnect {
     private ?PDO $dbLink;
 
     /**
-     * dbConnect constructor.
+     * DB constructor.
      * @param $serv
      * @param $db
      * @param $user

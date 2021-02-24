@@ -6,6 +6,6 @@ class UtilisateursStatic {
     private ?PDO $db;
 
     public function getUtilisateurs() {
-        $this->db = DbStatic::getLink();
+        $this->db = DB::getLink();
     }
 }

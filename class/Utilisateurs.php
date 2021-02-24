@@ -11,5 +11,6 @@ class Utilisateurs
 
     public function getUtilisateurs() {
         // todo aller chercher utilisateur en base de données
+
     }
 }
